@@ -45,9 +45,9 @@ fetchApi(forecastUrl, data => {
         if (data.list[iterator].weather[0].main === 'Rain') {
             day.children.item(1).src = 'png/rain.png';
         } else if (data.list[iterator].weather[0].main === 'Clear') {
-            day.children.item(1).src = 'png/Sun.png';
+            day.children.item(1).src = 'png/sun.png';
         } else if (data.list[iterator].weather[0].main === 'Clouds') {
-            day.children.item(1).src = 'png/Cloudy.png';
+            day.children.item(1).src = 'png/cloudy.png';
         }
 
         iterator += 8;
