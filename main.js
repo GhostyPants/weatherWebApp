@@ -3,8 +3,8 @@ const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
 const lat = 18.451029;
 const lon = -69.658889;
 let currentDay = new Date().getDay();
-const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&APPID=ada0a156b990123df254d41a556a7a77`;
-const currentDayWeatherUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&APPID=ada0a156b990123df254d41a556a7a77`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&APPID=ada0a156b990123df254d41a556a7a77`;
+const currentDayWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&APPID=ada0a156b990123df254d41a556a7a77`;
 
 function fetchApi(url, f) {
     fetch(url)
